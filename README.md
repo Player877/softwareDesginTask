@@ -1,2 +1,0 @@
-# softwareDesginTask
-西南科技大学软件设计模式实践课作业

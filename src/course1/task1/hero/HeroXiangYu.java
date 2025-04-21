@@ -1,25 +1,13 @@
 package course1.task1.hero;
 
-import course1.task1.skill.ArcheryAbility;
-import course1.task1.skill.InvisibleAbility;
-import course1.task1.skill.SilentAbility;
-import course1.task1.skill.VertigoAbility;
-import course1.task1.skill.imp.ArcheryImp;
-import course1.task1.skill.imp.InvisibleImp;
-import course1.task1.skill.imp.SilentImp;
-import course1.task1.skill.imp.VertigoImp;
+import course1.task1.skill.*;
+import course1.task1.skill.imp.*;
 
-public class HeroXiangYu implements InvisibleImp, SilentImp, ArcheryImp, VertigoImp {
+public class HeroXiangYu implements InvisibleImp, SilentImp, DisplacementImp {
 
-    private final ArcheryAbility archeryAbility = new ArcheryAbility();
     private final InvisibleAbility invisibleAbility = new InvisibleAbility();
     private final SilentAbility silentAbility = new SilentAbility();
-    private final VertigoAbility vertigoAbility = new VertigoAbility();
-
-    @Override
-    public void doArchery() {
-        archeryAbility.doArchery();
-    }
+    private final DisplacementAbility displacementAbility = new DisplacementAbility();
 
     @Override
     public void doInvisible() {
@@ -32,7 +20,7 @@ public class HeroXiangYu implements InvisibleImp, SilentImp, ArcheryImp, Vertigo
     }
 
     @Override
-    public void doVertigo() {
-        vertigoAbility.doVertigo();
+    public void doDisplacement() {
+        displacementAbility.doDisplacement();
     }
 }

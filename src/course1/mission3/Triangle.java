@@ -1,4 +1,4 @@
-package course1.task3;
+package course1.mission3;
 
 public class Triangle extends Shape{
     @Override

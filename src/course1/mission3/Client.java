@@ -1,8 +1,8 @@
-package course1.task3;
+package course1.mission3;
 
 import java.util.Scanner;
 
-public class Main {
+public class Client {
 
     public static void main(String[] args) {
         System.out.println("请输入所需绘制图形类型(circle/rectangle/triangle)：");
